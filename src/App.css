@@ -6,10 +6,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Righteous&display=swap');
 
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9?styles=49034');
+
 @layer components {
 
     .social {
-        @apply rounded-full h-12 w-12 flex items-center justify-center bg-navy border-2  border-red mx-2  hover:bg-red duration-300 cursor-pointer;
+        @apply rounded-full h-12 w-12 flex items-center justify-center bg-navy border-2  border-principal mx-2  hover:bg-principal duration-300 cursor-pointer;
     }
 
     .elements {
@@ -29,11 +31,11 @@
     }
 
     .btn {
-        @apply rounded-full py-3 px-6 bg-navy border-2 border-red duration-300 hover:bg-red m-auto  ;
+        @apply rounded-full py-3 px-6 bg-navy border-2 border-principal duration-300 hover:bg-principal m-auto  ;
     }
 
     .title {
-        @apply text-4xl md:text-5xl font-bold mx-auto my-7 md:mb-10 font-title tracking-wide;
+        @apply text-4xl md:text-5xl font-bold mx-auto my-7 md:mb-10 font-title tracking-wide uppercase;
     }
 
     .subtitle {
@@ -41,7 +43,7 @@
     }
 
     .br-div {
-        @apply bg-red w-2 ;
+        @apply bg-principal w-2 ;
     }
 
     

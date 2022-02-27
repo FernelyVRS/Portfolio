@@ -30,8 +30,8 @@ const Projects = () => {
 				<div className="flex flex-col-2">
 					<h1 className="title ">
 						Projects
-						<hr className="border w-24 mx-auto border-red mt-4 mb-2 " />
-						<hr className="border w-16 mx-auto border-red" />
+						<hr className="border w-24 mx-auto border-principal mt-4 mb-2 " />
+						<hr className="border w-16 mx-auto border-principal" />
 					</h1>
 				</div>
 

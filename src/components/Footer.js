@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<div className="relative text-white">
 			<div className="flex justify-center mb-4">
-				<div className="flex absolute rounded-full h-14 w-14 items-center justify-center bg-red  -top-7 cursor-pointer">
+				<div className="flex absolute rounded-full h-14 w-14 items-center justify-center bg-principal  -top-7 cursor-pointer">
 					<Link
 						activeClass="active"
 						to="home"

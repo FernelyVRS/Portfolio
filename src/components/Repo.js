@@ -10,6 +10,7 @@ const Repo = (props) => {
 						className="w-full"
 						src={`https://raw.githubusercontent.com/FernelyVRS/${filterRepo.name}/${filterRepo.default_branch}/screenshot.gif`}
 						alt="Sunset in the mountains"
+						loading="lazy"
 					/>
 					<div className="px-6 py-4">
 						<div className="font-medium text-2xl mb-2 capitalize ">{filterRepo.name.replace(/-/g, " ")}</div>
@@ -29,16 +30,16 @@ const Repo = (props) => {
 					</div>
 					<div className="px-6 pt-4 flex mb-3">
 						<div
-							className="text-red hover:underline font-medium cursor-pointer"
+							className="text-principal hover:underline font-medium cursor-pointer"
 							href={filterRepo.html_url}
 							target="_blank"
 							rel="noreferrer"
 						>
 							Repository
 						</div>
-						<div className="border border-red mx-3"></div>
+						<div className="border border-principal mx-3"></div>
 						<div
-							className={filterRepo.homepage === "" ? "text-gray-400 font-medium pointer-events-none" : "text-red hover:underline font-medium cursor pointer"}
+							className={filterRepo.homepage === "" ? "text-gray-400 font-medium pointer-events-none" : "text-principal hover:underline font-medium cursor pointer"}
 							href={filterRepo.homepage}
 							target="_blank"
 							rel="noreferrer"

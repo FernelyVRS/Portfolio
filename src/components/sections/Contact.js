@@ -30,8 +30,8 @@ const Contact = () => {
 				<div className="flex flex-col-2">
 					<h1 className="title ">
 						Contact Me
-						<hr className="border w-24 mx-auto border-red mt-4 mb-2 " />
-						<hr className="border w-16 mx-auto border-red" />
+						<hr className="border w-24 mx-auto border-principal mt-4 mb-2 " />
+						<hr className="border w-16 mx-auto border-principal" />
 					</h1>
 				</div>
 				<div>
@@ -40,33 +40,33 @@ const Contact = () => {
 							<input
 								name="name"
 								type="text"
-								className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-red focus:ring"
+								className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 								placeholder="Name"
-								required
+								requiprincipal
 							/>
 							<input
 								name="email"
 								type="email"
-								className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-red focus:ring"
+								className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 								placeholder="Email Address"
-								required
+								requiprincipal
 							/>
 						</div>
 
 						<input
 							name="subject"
 							type="text"
-							className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-red focus:ring"
+							className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 							placeholder="Subject"
-							required
+							requiprincipal
 						/>
 
 						<textarea
 							name="message"
 							type="text"
-							className="w-full h-32 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-red focus:ring"
+							className="w-full h-32 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 							placeholder="Message"
-							required
+							requiprincipal
 						/>
 
 						<button className="flex btn md:ml-0 mt-3">Send Message</button>

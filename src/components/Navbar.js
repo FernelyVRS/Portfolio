@@ -4,6 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [colorChange, setColorchange] = useState(false);
 
 	const toggle = () => {
 		setIsOpen(!isOpen);
@@ -16,6 +17,16 @@ const Navbar = () => {
 			}
 		};
 
+		const changeNavbarColor = () =>{
+			if(window.scrollY >= 80){
+				setColorchange(true);
+			}
+			else{
+				setColorchange(false);
+			}
+		};
+		window.addEventListener('scroll', changeNavbarColor);
+
 		window.addEventListener("resize", hiddeMenu);
 
 		return () => {
@@ -24,7 +35,7 @@ const Navbar = () => {
 	});
 
 	return (
-		<div className="bg-navy shadow fixed w-full animate__animated animate__fadeInDownBig z-10" >
+		<div className={colorChange ? 'bg-navy shadow fixed w-full animate__animated animate__fadeInDownBig z-10' : ' fixed w-full animate__animated animate__fadeInDownBig z-10'}  >
 			<nav
 				className="navbar flex  items-center justify-between h-20  text-2x1"
 				role="navigation"
@@ -60,7 +71,7 @@ const Navbar = () => {
 								offset={-15}
 								duration={500}
 								key={key}
-								className="block hover:text-red mt-4 lg:inline-block lg:mt-0 mx-2 p-2 duration-300 cursor-pointer"
+								className="block hover:text-principal mt-4 lg:inline-block lg:mt-0 mx-2 p-2 duration-300 cursor-pointer"
 							>
 								{name}
 							</Link>
@@ -85,7 +96,7 @@ const Navbar = () => {
 							offset={-15}
 							duration={500}
 							key={key}
-							className="block text-white hover:text-red mt-4 lg:inline-block lg:mt-0 mx-2 p-2 duration-300 cursor-pointer"
+							className="block text-white hover:text-principal mt-4 lg:inline-block lg:mt-0 mx-2 p-2 duration-300 cursor-pointer"
 						>
 							{name}
 						</Link>
