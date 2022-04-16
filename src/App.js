@@ -3,6 +3,8 @@ import React, {Suspense} from 'react';
 import './App.css';
 import 'animate.css/animate.min.css'
 
+import Spinner from './components/Spinner'
+
 const Navbar = React.lazy(() => import('./components/Navbar'));
 const Home = React.lazy(() => import('./components/sections/Home'));
 const About = React.lazy(() => import('./components/sections/About'));
@@ -14,7 +16,7 @@ const Footer = React.lazy(() => import('./components/Footer'));
 function App() {
   return (
     <div className="App bg-navy font-body">
-      <Suspense fallback={<div> Cargando...</div>}>
+      <Suspense fallback={<Spinner/>}>
         <Navbar/>
         <Home/>
         <About/>

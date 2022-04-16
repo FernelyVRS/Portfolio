@@ -86,16 +86,6 @@ module.exports = {
 				color: "#F0DB4F",
 			},
             {
-				name: "PHP",
-				icon: "SiPhp",
-				color: "#7378AE",
-            },
-            {
-				name: "Laravel",
-				icon: "SiLaravel",
-				color: "#F84837",
-            },
-            {
 				name: "Sql Server",
 				icon: "SiMicrosoftsqlserver",
 				color: "#A4323B",
@@ -129,6 +119,11 @@ module.exports = {
 				icon: "SiLinux",
 				color: "",
 			},
+			{
+				name: "Docker",
+				icon: "SiDocker",
+				color: "#2496ed"
+			}
 			
 		],
 	},

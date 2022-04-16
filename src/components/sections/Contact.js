@@ -42,14 +42,14 @@ const Contact = () => {
 								type="text"
 								className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 								placeholder="Name"
-								requiprincipal
+								required
 							/>
 							<input
 								name="email"
 								type="email"
 								className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 								placeholder="Email Address"
-								requiprincipal
+								required
 							/>
 						</div>
 
@@ -58,7 +58,7 @@ const Contact = () => {
 							type="text"
 							className="w-full h-16 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 							placeholder="Subject"
-							requiprincipal
+							required
 						/>
 
 						<textarea
@@ -66,7 +66,7 @@ const Contact = () => {
 							type="text"
 							className="w-full h-32 my-3 rounded-lg placeholder-gray-400 text-gray-200 py-4  px-4 pl-12 bg-navy focus:outline-none focus:ring-principal focus:ring"
 							placeholder="Message"
-							requiprincipal
+							required
 						/>
 
 						<button className="flex btn md:ml-0 mt-3">Send Message</button>

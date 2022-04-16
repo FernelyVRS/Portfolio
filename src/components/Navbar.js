@@ -8,6 +8,8 @@ const Navbar = () => {
 
 	const toggle = () => {
 		setIsOpen(!isOpen);
+		if(window.scrollY <80 )
+			setColorchange(!colorChange)
 	};
 
 	useEffect(() => {
@@ -26,6 +28,10 @@ const Navbar = () => {
 			}
 		};
 		window.addEventListener('scroll', changeNavbarColor);
+		window.addEventListener('scroll', () => {
+			if(isOpen)
+				setIsOpen(false);
+		});
 
 		window.addEventListener("resize", hiddeMenu);
 
@@ -82,7 +88,7 @@ const Navbar = () => {
 
 			<div
 				className={
-					isOpen ? "grid grid-rows text-center items-center bg-navy" : "hidden"
+					isOpen ? "grid grid-rows text-center items-center " : "hidden"
 				}
 				onClick={toggle}
 			>
@@ -96,6 +102,7 @@ const Navbar = () => {
 							offset={-15}
 							duration={500}
 							key={key}
+							onClick={toggle}
 							className="block text-white hover:text-principal mt-4 lg:inline-block lg:mt-0 mx-2 p-2 duration-300 cursor-pointer"
 						>
 							{name}
