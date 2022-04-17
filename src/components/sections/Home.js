@@ -18,10 +18,10 @@ const Home = () => {
 							<Social />
 						</div>
 
-						<p className="text-3xl sm:text-4xl mt-6  elements ">
+						<p className="text-3xl sm:text-4xl mt-6 elements animate__animated animate__fadeInDown">
 							Fernely Veras
 						</p>
-						<p className="title text-3xl sm:text-5xl mt-4 mb-8 elements ">
+						<p className="title text-3xl sm:text-5xl mt-4 mb-8 elements">
 							Software Developer
 						</p>
 
@@ -33,7 +33,7 @@ const Home = () => {
 							offset={-15}
 							duration={500}
 						>
-							<button className="flex btn bg-principal ">Contact Me</button>
+							<button className="flex btn bg-principal animate__animated animate__fadeIn">Contact Me</button>
 						</Link>
 					</div>
 				</div>
