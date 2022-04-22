@@ -56,6 +56,7 @@ const About = () => {
 				</div>
 
 				<button
+					type="button"
 					className="flex btn "
 					href="https://drive.google.com/file/d/1ctsLa-KAOMkyf33AvZ2fVse-xq6SlaTy/view?usp=sharing"
 					target="_blank"
