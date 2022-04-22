@@ -55,14 +55,17 @@ const About = () => {
 					</div>
 				</div>
 
-				<button
-					type="button"
-					className="flex btn "
-					href="https://drive.google.com/file/d/1ctsLa-KAOMkyf33AvZ2fVse-xq6SlaTy/view?usp=sharing"
-					target="_blank"
-				>
-					Download CV
-				</button>
+				<div className="flex mx-auto">
+					<a
+						type="button"
+						href="https://drive.google.com/file/d/1ctsLa-KAOMkyf33AvZ2fVse-xq6SlaTy/view?usp=sharing"
+						target="_blank"
+						rel="noreferrer"
+						className="flex btn element"
+					>
+						Download CV
+					</a>
+				</div>
 			</div>
 		</div>
 	);
