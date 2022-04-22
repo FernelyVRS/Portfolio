@@ -35,8 +35,6 @@ const Home = () => {
 						>
 							<button
 								className="flex btn bg-principal animate__animated animate__fadeIn"
-								href="https://drive.google.com/file/d/1ctsLa-KAOMkyf33AvZ2fVse-xq6SlaTy/view?usp=sharing"
-								target="_blank"
 							>
 								Contact Me
 							</button>
